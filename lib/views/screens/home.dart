@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:get/get.dart';
 import 'package:monie_point_test/helpers/const.dart';
-import 'package:monie_point_test/views/screens/product_detail.dart';
-
 import '../../helpers/assets.dart';
-import '../widgets/carousel_card.dart';
 import '../../helpers/badge.dart';
 import '../widgets/home_widgets.dart';
 import '../widgets/home_carousel.dart';

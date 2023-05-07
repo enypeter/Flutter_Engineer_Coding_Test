@@ -1,10 +1,8 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import '../../helpers/const.dart';
 import '../../helpers/styles.dart';
 import '../../helpers/theme.dart';
-import 'carousel_card.dart';
 import '../../models/carousel_model.dart';
 import 'home_widgets.dart';
 
