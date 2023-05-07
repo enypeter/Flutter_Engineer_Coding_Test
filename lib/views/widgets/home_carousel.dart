@@ -69,7 +69,7 @@ class _CarouselCardState extends State<CarouselCard> {
     Timer.periodic(const Duration(seconds: 10), (Timer timer) {
       _pageController.animateToPage(
         _currentIndex == 0 ? 1 : 0,
-        duration: const Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 400),
         curve: Curves.easeIn,
       );
     });
