@@ -23,12 +23,12 @@ class _CarouselCardState extends State<CarouselCard> {
         title: "80% OFF",
         description: "Discover fashion that suits to your style",
         image: "assets/images/hanged_shirt.png",
-        bgColor: const Color(0xFFE8EBEA)),
+        bgColor: const Color(0xFFE5E8E7)),
     CarouselModel(
         hashTag: "#BEAUTYSALE",
         title: "DISCOVER OUR BEAUTY SELECTION",
         image: "assets/images/cosmetic.png",
-        bgColor: const Color(0xFFEAE1E2))
+        bgColor: const Color(0xFFFFF3EE))
   ];
 
   @override
@@ -41,8 +41,7 @@ class _CarouselCardState extends State<CarouselCard> {
 
   @override
   void dispose() {
-    super.dispose();
-    _pageController.dispose();
+    _pageController.dispose();    super.dispose();
   }
 
   @override
@@ -64,11 +63,13 @@ class _CarouselCardState extends State<CarouselCard> {
 
   void playCarousel() {
     Timer.periodic(const Duration(seconds: 10), (Timer timer) {
-      _pageController.animateToPage(
+      if(mounted) {
+        _pageController.animateToPage(
         _currentIndex == 0 ? 1 : 0,
         duration: const Duration(milliseconds: 400),
-        curve: Curves.easeIn,
+        curve: Curves.easeInCubic,
       );
+      }
     });
   }
 }

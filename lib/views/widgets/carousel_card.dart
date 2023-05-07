@@ -90,7 +90,7 @@ class DashboardCarouselCard extends StatelessWidget {
                     children: [
                       Image.asset(
                         data.image,
-                        width: 300,
+                        width: 350,
                         height: 150,
                         fit: BoxFit.cover,
                       ),
