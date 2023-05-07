@@ -6,16 +6,16 @@ import '../../helpers/theme.dart';
 import '../../models/carousel_model.dart';
 import 'home_widgets.dart';
 
-class CarouselCard extends StatefulWidget {
-  const CarouselCard({
+class DashboardCarousel extends StatefulWidget {
+  const DashboardCarousel({
     super.key,
   });
 
   @override
-  State<CarouselCard> createState() => _CarouselCardState();
+  State<DashboardCarousel> createState() => _DashboardCarouselState();
 }
 
-class _CarouselCardState extends State<CarouselCard> {
+class _DashboardCarouselState extends State<DashboardCarousel> {
   int _currentIndex = 0;
   final _pageController = PageController();
 
@@ -54,7 +54,8 @@ class _CarouselCardState extends State<CarouselCard> {
       onPageChanged: (v) {
         _currentIndex = v;
       },
-      itemBuilder: (_, i) => DashboardCarouselCard(
+      itemBuilder: (_, i) => CarouselCard
+(
         data: _carouselData[i],
         index: i,
         currentIndex: _currentIndex,
@@ -76,13 +77,15 @@ class _CarouselCardState extends State<CarouselCard> {
   }
 }
 
-class DashboardCarouselCard extends StatelessWidget {
+class CarouselCard
+ extends StatelessWidget {
   final CarouselModel data;
   final int index;
   final int currentIndex;
   final int count;
 
-  const DashboardCarouselCard(
+  const CarouselCard
+(
       {super.key,
         required this.data,
         required this.index,

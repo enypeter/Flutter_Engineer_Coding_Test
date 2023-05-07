@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           flexibleSpace: const FlexibleSpaceBar(
             collapseMode: CollapseMode.pin,
-            background: CarouselCard(),
+            background: DashboardCarousel(),
           ),
         ),
         SliverPersistentHeader(
