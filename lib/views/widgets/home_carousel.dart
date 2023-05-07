@@ -19,20 +19,17 @@ class _CarouselCardState extends State<CarouselCard> {
 
   final List<CarouselModel> _carouselData = [
     CarouselModel(
-      hashTag: "#FASHION DAY",
-      title: "80% OFF",
-      description: "Discover fashion that suits to your style",
-      image: "assets/images/hanged_shirt.png",
-      bgColor: const Color(0xFFE8EBEA),
-    ),
+        hashTag: "#FASHION DAY",
+        title: "80% OFF",
+        description: "Discover fashion that suits to your style",
+        image: "assets/images/hanged_shirt.png",
+        bgColor: const Color(0xFFE8EBEA)),
     CarouselModel(
-      hashTag: "#BEAUTYSALE",
-      title: "DISCOVER OUR BEAUTY SELECTION",
-      image: "assets/images/cosmetic.png",
-      bgColor: const Color(0xFFEAE1E2),
-    )
+        hashTag: "#BEAUTYSALE",
+        title: "DISCOVER OUR BEAUTY SELECTION",
+        image: "assets/images/cosmetic.png",
+        bgColor: const Color(0xFFEAE1E2))
   ];
-
 
   @override
   void initState() {
