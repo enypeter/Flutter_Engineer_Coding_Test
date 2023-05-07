@@ -79,6 +79,18 @@ Expanded productCard({image, isFav = false}) {
   );
 }
 
+Padding indicator({required double width, required double opacity}) {
+  return Padding(
+    padding: const EdgeInsets.all(2.0),
+    child: Container(
+      height: 3,
+      width: width,
+      decoration: BoxDecoration(
+          color: DARK.withOpacity(opacity),
+          borderRadius: BorderRadius.circular(3)),
+    ),
+  );
+}
 
 Widget categoryButton(icon, title) {
   return Column(
